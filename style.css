@@ -1,0 +1,141 @@
+/*Geral*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(94, 94, 191);
+  }
+  
+  /*header*/
+  header {
+    background-color: rgb(94, 94, 191);
+    color: #fff; /*texto branco*/
+    text-align: center; /*deixa as coisas no centro*/
+    padding: 15px 0; /*espaçamento*/
+  }
+  
+  .barra-menu li {
+    display: inline-block; /*deixar em linha*/
+    margin-right: 20px; /*espaço entre as palavras*/
+  }
+  
+  .barra-menu a {
+    color: #fff; /*Cor do link branco*/
+    text-decoration: none; /*tira aquele sublinhado feio*/
+  }
+  
+  .barra-menu a:hover {
+    color: #ddd; /* Cor do link em hover cinza claro */
+  }
+  
+  /*sections/divs de todas as páginas*/
+  .enclave, .ncr, .BoS, .introducao, .ambientacao, .pip-boy, .vault, .ghoul, .deathclaw, .supermutante, .radscorpion, .mirelurk, .jogo, .obrigado {
+    background-color: #fff; /*Cor de fundo branco*/
+    border: 2px solid #000000; /*bordinha*/
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  #contato{
+    background-color: #fff; /*Cor de fundo branco*/
+    border: 2px solid #000000; /*bordinha*/
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+  }
+
+  #contato label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+#contato label[for="concordo"] {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+  #contato input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  #contato input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff; /*branco texto*/
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /*DÁ PRA CLICAR*/
+  }
+  
+  #contato input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .ambientacao img {
+    max-width: 800px; /*largura foto wasteland*/
+  }
+
+  .vault img {
+    max-width: 600px; /*largura foto vault */
+  }
+  
+  
+
+  .enclave img, .ncr img, .BoS img {
+    display: block; 
+    margin: 0 auto; /*Centralizar as fotos horizontalmente*/
+    margin-bottom: 10px; /*espaçamento da borda das fotos*/
+  }
+  
+  /*títulos*/
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  /*fotos*/
+  img {
+    display: block; /*exibir elas como caixinhas*/
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  
+  
+  /*textos das coisas*/
+  p {
+    margin-bottom: 10px;
+  }
+  
+  /*listas*/
+  ul {
+    list-style-type: disc; /* Marcadores de disco */
+    margin-left: 20px;
+  }
+  
+  /*estilo de cada um dos ngc*/
+  
+  /*Enclave*/
+  .enclave {
+    text-align: justify; 
+  }
+  
+  /*NCR*/
+  .ncr {
+    text-align: justify; /*texto no meio*/
+  }
+  
+  
+  /*Brotherhood of Steel*/
+  .BoS {
+    text-align: justify; 
+  }
+  

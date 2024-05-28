@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contato</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -15,7 +16,33 @@
             <a href="contato.html">Envie-nos uma mensagem</a>
         </nav>
     </header>
-    <h1>FAZER AINDA</h1>
+
+    <section id="contato">
+        <br>
+        <br>
+        <h1>Envie-nos uma mensagem!</h1>
+        <form id="contato" action="msg.html" method="post">
+
+            <label>Nome: </label>
+            <input type="text" name="nome" id="nome" required> <br>
+
+            <label>E-mail: </label>
+            <input type="email" name="mail" id="mail" required> <br>
+
+            <label>Assunto: </label>
+            <select name="assunto">
+                <option value="Sugestão">Sugestão</option>
+                <option value="Reclamação">Reclamação</option>
+                <option value="Elogio" selected>Elogio</option>
+            </select> <br>
+
+            <label>Mensagem: </label>
+            <textarea name="Mensagem"></textarea>
+            <br>
+            
+            <input type="submit" value="Enviar" required> <br>
+            </form>
+    </section>
     
 </body>
 </html>
