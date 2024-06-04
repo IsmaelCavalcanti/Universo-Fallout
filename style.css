@@ -1,141 +1,233 @@
+/* Importação da fonte */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /*Geral*/
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: rgb(94, 94, 191);
-  }
-  
-  /*header*/
-  header {
-    background-color: rgb(94, 94, 191);
-    color: #fff; /*texto branco*/
-    text-align: center; /*deixa as coisas no centro*/
-    padding: 15px 0; /*espaçamento*/
-  }
-  
-  .barra-menu li {
-    display: inline-block; /*deixar em linha*/
-    margin-right: 20px; /*espaço entre as palavras*/
-  }
-  
-  .barra-menu a {
-    color: #fff; /*Cor do link branco*/
-    text-decoration: none; /*tira aquele sublinhado feio*/
-  }
-  
-  .barra-menu a:hover {
-    color: #ddd; /* Cor do link em hover cinza claro */
-  }
-  
-  /*sections/divs de todas as páginas*/
-  .enclave, .ncr, .BoS, .introducao, .ambientacao, .pip-boy, .vault, .ghoul, .deathclaw, .supermutante, .radscorpion, .mirelurk, .jogo, .obrigado {
-    background-color: #fff; /*Cor de fundo branco*/
-    border: 2px solid #000000; /*bordinha*/
-    padding: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  #contato{
-    background-color: #fff; /*Cor de fundo branco*/
-    border: 2px solid #000000; /*bordinha*/
-    padding: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-
-  }
-
-  #contato label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-#contato label[for="concordo"] {
-  display: inline-block;
-  margin-left: 5px;
+    background-color: #2C2C2C;
+    color: #EAEAEA;
 }
 
-  #contato input[type="checkbox"] {
-    margin-right: 5px;
-  }
+.container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
 
-  #contato input[type="submit"] {
+.container label {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  background-color: #FFD700;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.5s linear;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container input {
+  visibility: hidden;
+}
+
+.container label::after {
+  content: '';
+  width: 26px;
+  height: 26px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: left 0.5s linear;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.container input:checked + label {
+  background-color: #333;
+}
+
+.container input:checked + label::after {
+  left: 32px;
+}
+
+
+/*header*/
+header {
+    background-color: #3A3A3A;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.barra-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.barra-menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.barra-menu a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.barra-menu a:hover {
+    color: #ADFF2F;
+}
+
+/*sections/divs de todas as páginas*/
+.introducao, .ambientacao, .pip-boy, .vault {
+    background-color: #383838;
+    border: 2px solid #FFD700;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/*fotos*/
+img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/*títulos*/
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ADFF2F;
+    text-shadow: 1px 1px #000;
+}
+
+/*textos das coisas*/
+p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/*listas*/
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/*Botões*/
+#contato input[type="submit"] {
     padding: 10px 20px;
     background-color: #007bff;
-    color: #fff; /*branco texto*/
+    color: #fff;
     border: none;
     border-radius: 5px;
-    cursor: pointer; /*DÁ PRA CLICAR*/
-  }
-  
-  #contato input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+#contato input[type="submit"]:hover {
     background-color: #0056b3;
-  }
-  
+}
 
-  .ambientacao img {
-    max-width: 800px; /*largura foto wasteland*/
-  }
 
-  .vault img {
-    max-width: 600px; /*largura foto vault */
-  }
-  
-  
+/*modo claro*/
 
-  .enclave img, .ncr img, .BoS img {
-    display: block; 
-    margin: 0 auto; /*Centralizar as fotos horizontalmente*/
-    margin-bottom: 10px; /*espaçamento da borda das fotos*/
-  }
-  
-  /*títulos*/
-  h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+/* Importação da fonte */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*Geral*/
+body.light-mode {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+/*header*/
+header.light-mode {
+    background-color: #F5F5F5;
+    color: #000000;
     text-align: center;
-  }
-  
-  h2 {
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
-  
-  /*fotos*/
-  img {
-    display: block; /*exibir elas como caixinhas*/
-    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.barra-menu.light-mode ul {
+    list-style: none;
+    padding: 0;
+}
+
+.barra-menu.light-mode li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.barra-menu.light-mode a {
+    color: #0066CC;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.barra-menu.light-mode a:hover {
+    color: #004C99;
+}
+
+/*sections/divs de todas as páginas*/
+.introducao.light-mode, .ambientacao.light-mode, .pip-boy.light-mode, .vault.light-mode {
+    background-color: #F0F0F0;
+    border: 2px solid #CCCCCC;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/*fotos claro*/
+img.light-mode {
+    max-width: 20%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/*títulos*/
+h1.light-mode {
+    font-size: 28px;
     margin-bottom: 10px;
-  }
-  
-  
-  /*textos das coisas*/
-  p {
+    color: #0066CC;
+    text-shadow: 1px 1px #FFF;
+}
+
+/*textos das coisas*/
+p.light-mode {
     margin-bottom: 10px;
-  }
-  
-  /*listas*/
-  ul {
-    list-style-type: disc; /* Marcadores de disco */
+    line-height: 1.6;
+}
+
+/*listas*/
+ul.light-mode {
+    list-style-type: disc;
     margin-left: 20px;
-  }
-  
-  /*estilo de cada um dos ngc*/
-  
-  /*Enclave*/
-  .enclave {
-    text-align: justify; 
-  }
-  
-  /*NCR*/
-  .ncr {
-    text-align: justify; /*texto no meio*/
-  }
-  
-  
-  /*Brotherhood of Steel*/
-  .BoS {
-    text-align: justify; 
-  }
-  
+}
+
+/* Botões */
+#contato.light-mode input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contato.light-mode input[type="submit"]:hover {
+    background-color: #0056b3;
+}
