@@ -84,7 +84,7 @@ header {
 }
 
 /*sections/divs de todas as páginas*/
-.introducao, .ambientacao, .pip-boy, .vault {
+.introducao, .ambientacao, .pip-boy, .vault, .jogo {
     background-color: #383838;
     border: 2px solid #FFD700;
     padding: 20px;
